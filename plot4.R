@@ -13,7 +13,7 @@ draw_plot4 = function(){
     
   new_ele <- get_two_day_data_with_datetime();
 
-  
+  # defualts 480 x 480
   png(file = "plot4.png");
 
   #par(bg = "transparent")
@@ -28,6 +28,7 @@ draw_plot4 = function(){
 
   #third tile
   draw_plot3(FALSE);
+  
   # fourth tile
   with(new_ele,plot(date_time,Global_reactive_power, type="l",xlab="datetime"));
 

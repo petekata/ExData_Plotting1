@@ -8,6 +8,7 @@ draw_plot2 = function(dev_flag = TRUE){
 
   source("plot1.R");
   
+  # defualtas to 480 x 480
   if (dev_flag){
     png(file = "plot2.png");
   }

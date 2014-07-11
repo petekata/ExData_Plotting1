@@ -5,6 +5,7 @@
 
 draw_plot1 = function(dev_flag = TRUE){
 
+  # defaults to 480 x 480
   if (dev_flag){
     png(file = "plot1.png");
   }
@@ -17,7 +18,6 @@ draw_plot1 = function(dev_flag = TRUE){
   }
 
 }
-
 
 #helper function to get two day data
 get_two_day_data = function(){
